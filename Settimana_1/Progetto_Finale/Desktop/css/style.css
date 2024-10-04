@@ -1,5 +1,5 @@
 body {
-  /* text-align: center; */
+  text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   color: #393d41;
@@ -39,6 +39,7 @@ header img {
   background-size: cover;
   background-position: center;
   padding-bottom: 3vw;
+  height: 38vw;
 }
 
 p {
@@ -46,7 +47,7 @@ p {
   margin-top: 2%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   padding-left: 5%;
   padding-right: 4%;
   font-size: 0.8rem;
@@ -67,11 +68,37 @@ h3 {
 }
 
 #second_section {
-  margin-top: 15vw;
+  margin-top: 5vw;
+  text-align: start;
+}
+
+#second_section p,h3 {
+  text-align: start;
+  padding-left: 44%;
+}
+
+#second_section p {
+  margin-left: 0%;
+}
+
+#container {
+  position: absolute;
+  width: 30%;
+  height: 52%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 8%;
+  margin-bottom: 5vw;
+}
+
+#container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 #terza_section {
-  margin-top: 14vw;
+  margin-top: 4vw;
   background-color: #e22d0e;
 }
 
@@ -81,41 +108,32 @@ h3 {
   padding-left: 2%;
   padding-right: 2%;
   font-style: italic;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
 }
 
 #ruolo_testimone_text {
   margin-top: 0rem;
-  font-size: 1.8rem;
-  padding-bottom: 5vw;
+  font-size: 0.5rem;
+  padding-bottom: 0vw;
 }
 
-#container {
-  display: inline-block;
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-left: 5%;
-  margin-bottom: 8vw;
-}
-
-#container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.new_line {
+  display: block;
 }
 
 #quarta_section {
   padding-top: 0vw;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-  margin-left: 6vw;
-  margin-right: 6vw;
-  border-radius: 10px;
+  width: 25%;
+  border-radius: 3px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 10vw;
+  margin-top: 5vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
 }
 
 .card img {
@@ -123,17 +141,22 @@ h3 {
 }
 
 .card p {
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   padding-left: 0%;
   padding-right: 0%;
+  font-size: 0.6rem;
+}
+
+.card h3 {
+  font-size: 0.72rem;
 }
 
 footer {
   background-color: #c8e7f0;
   text-align: center;
-  height: 70vw;
-  margin-top: 15vw;
+  height: 25vw;
+  margin-top: 5vw;
 }
 
 footer {
@@ -141,8 +164,8 @@ footer {
 }
 
 footer h2 {
-  padding-top: 6vw;
-  font-size: 3.8rem;
+  padding-top: 2vw;
+  font-size: 2rem;
   color: white;
 }
 
@@ -150,7 +173,7 @@ footer a {
   display: block;
   color: #c8e7f0;
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
