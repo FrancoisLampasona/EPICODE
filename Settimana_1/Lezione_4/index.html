@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/img/logo.svg" />
+      <h1>EPICODE - IL BLOG DEI DEVELOPERS</h1>
+      <ul>
+        <li>⇒ HOME ⇐</li>
+        <li>⇒ ARTICOLI ⇐</li>
+        <li>⇒ LAVORA CON NOI ⇐</li>
+      </ul>
+    </header>
+    <main>
+      <h2>Come creare un template per i post</h2>
+      <div class="subcontent">
+        <p>
+          <i class="fas fa-pen-square"></i> di Mario Rossi -
+          <i class="fas fa-clock"></i> pubblicato il 25-10-2020
+        </p>
+      </div>
+      <article>
+        La prima cosa da fare è suddividere in blocchi logici la pagina,
+        identificando le <span class="purple">parti comuni</span> da applicare a
+        tutte le pagine.
+        <div>Le varie aree saranno quindi suddivise in:</div>
+        <ul>
+          <li>
+            Contenuti di intestazione del tag
+            <span class="listspan">&lt;header&gt;</span>
+          </li>
+          <li>
+            Contenuti centrali variabili del tag
+            <span class="listspan">&lt;main&gt;</span>
+          </li>
+          <li>
+            Contenuti di fine pagina comuni, da inserire nel tag
+            <span class="listspan">&lt;footer&gt;</span>
+          </li>
+        </ul>
+        <div>
+          <p>
+            Formattazione del codice.<br />
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da <span class="purple">selezionare con i CSS</span>.
+            Perciò i passi saranno:
+          </p>
+          <ol>
+            <li>
+              Progettare su carta il markup finale, assegnando ad ogni specifico
+              testo il tag appropriato.
+            </li>
+            <li>
+              Scrivere l'HTML dei tag esternia quelli interni e dall'alto verso
+              il basso.
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+          <p>
+            L'applicaione di stili CSS è cresciuta negli anni fino a raggiungere
+            la diffusione pressochè totale.
+          </p>
+        </div>
+        <div>
+          <table class="tg">
+            <caption>
+              Diffusione dei CSS
+            </caption>
+            <thead>
+              <tr>
+                <th class="tg-a6zl">Anno</th>
+                <th class="tg-a6zl">% di utilizzo</th>
+                <th class="tg-a6zl">Supporto dei browsers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0pky">2000</td>
+                <td class="tg-0pky">20%</td>
+                <td class="tg-0pky">17%</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">2002</td>
+                <td class="tg-0pky">35%</td>
+                <td class="tg-0pky">22%</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">2004</td>
+                <td class="tg-0pky">45%</td>
+                <td class="tg-0pky">42%</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">2008</td>
+                <td class="tg-0pky">80%</td>
+                <td class="tg-0pky">51%</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">2012</td>
+                <td class="tg-0pky">100%</td>
+                <td class="tg-0pky">76%</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+        </div>
+        <div>
+          <p>
+            Un test di validazione potrà essere fatto tramite il
+            <a href="#">tool online</a> dedicato allo scopo. Una volta
+            ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed
+            essere stati dei veri developers come loro:
+          </p>
+          <iframe
+            width="330"
+            height="175"
+            src="https://www.youtube.com/embed/aBSZVeBRvDY?si=pIAhlBZr5kWUrOsm"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+      <div class="newsletter">
+        <h2>Novità</h2>
+        <p>
+          Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+          nostra newsletter:
+        </p>
+        <input type="email" /> <button>Iscriviti!</button>
+      </div>
+      <h2>ARTICOLI CORRELATI</h2>
+      <div class="Sub-articles">
+        <p><a href="#">Validare il codice HTML</a></p>
+        <p><i class="fas fa-tag"></i> Categoria:develop</p>
+        <p><i class="fas fa-calendar-alt"></i>Data:18-9-2020</p>
+      </div>
+      <div class="Sub-articles">
+        <p><a href="#">Correggere la sintassi</a></p>
+        <p><i class="fas fa-tag"></i> Categoria:develop</p>
+        <p><i class="fas fa-calendar-alt"></i>Data:16-9-2020</p>
+      </div>
+      <div class="Sub-articles">
+        <p><a href="#">Meno Kb nella pagina</a></p>
+        <p><i class="fas fa-tag"></i> Categoria:ottimizzazione</p>
+        <p><i class="fas fa-calendar-alt"></i>Data:30-9-2020</p>
+      </div>
+    </main>
+    <footer>
+      <h3>Blog Epicode 2021</h3>
+      <p>Testata online bla bla</p>
+    </footer>
+  </body>
 </html>

@@ -1,1 +1,177 @@
-/* Your styles here */
+body {
+  /* text-align: center; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: #393d41;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #25a2c3;
+  line-height: 1.5;
+}
+
+header {
+  background-color: black;
+}
+
+header img {
+  width: 15%;
+  padding-top: 1.5vw;
+  padding-bottom: 2.5vw;
+}
+
+#logo {
+  text-align: start;
+  padding-left: 5vw;
+}
+
+#first_section {
+  padding-top: 1vw;
+  background-image: url("../assets/images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 3vw;
+}
+
+p {
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 4%;
+  font-size: 0.8rem;
+}
+
+h1 {
+  padding-top: 10%;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+  margin-top: 1.5vw;
+}
+
+.color_white {
+  color: white;
+}
+
+#second_section {
+  margin-top: 15vw;
+}
+
+#terza_section {
+  margin-top: 14vw;
+  background-color: #e22d0e;
+}
+
+#testimonianze_text {
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-style: italic;
+  font-size: 2.2rem;
+}
+
+#ruolo_testimone_text {
+  margin-top: 0rem;
+  font-size: 1.8rem;
+  padding-bottom: 5vw;
+}
+
+#container {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-bottom: 8vw;
+}
+
+#container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#quarta_section {
+  padding-top: 0vw;
+}
+
+.card {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10vw;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+footer {
+  background-color: #c8e7f0;
+  text-align: center;
+  height: 70vw;
+  margin-top: 15vw;
+}
+
+footer {
+  background-color: #25a2c3;
+}
+
+footer h2 {
+  padding-top: 6vw;
+  font-size: 3.8rem;
+  color: white;
+}
+
+footer a {
+  display: block;
+  color: #c8e7f0;
+  text-decoration: none;
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+
+.pulsante {
+  background-color: #f04c2f;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 0.6rem;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+#linea {
+  color: white;
+  margin-top: 5vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+#fine {
+  display: inline;
+}
