@@ -41,7 +41,9 @@ if (a === 8 || b === 8 || a + b === 8 || Math.abs(a - b) === 8) {
 }
 
 /* ESERCIZIO 5
-  Determina l'ammontare totale che deve essere addebitato all'utente per il checkout, considerando la spedizione gratuita se il totale del carrello supera 50.
+  Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
+  C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
+  Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
 let totalShoppingCart = 60;
@@ -50,20 +52,25 @@ let totalToPay = totalShoppingCart + shippingCost;
 console.log("Totale da pagare: " + totalToPay);
 
 /* ESERCIZIO 6
-  Applica lo sconto del 20% per il Black Friday e calcola il totale, includendo la spedizione gratuita se il totale del carrello (con lo sconto) supera 50.
+  Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
+  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 let blackFridayDiscount = 0.2;
-totalShoppingCart = totalShoppingCart - (totalShoppingCart * blackFridayDiscount);
+totalShoppingCart = totalShoppingCart - totalShoppingCart * blackFridayDiscount;
 shippingCost = totalShoppingCart > 50 ? 0 : 10;
 totalToPay = totalShoppingCart + shippingCost;
 console.log("Totale da pagare con sconto Black Friday: " + totalToPay);
 
 /* ESERCIZIO 7
-  Ordina tre numeri dal più alto al più basso.
+  Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
+  Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
+  Alla fine mostra il risultato in console.
 */
 
-let x = 15, y = 10, z = 25;
+let x = 15,
+  y = 10,
+  z = 25;
 if (x >= y && x >= z) {
   if (y >= z) {
     console.log(x, y, z);
@@ -85,7 +92,7 @@ if (x >= y && x >= z) {
 }
 
 /* ESERCIZIO 8
-  Verifica se un valore è un numero oppure no.
+  Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 let value = "hello";
@@ -96,7 +103,7 @@ if (typeof value === "number") {
 }
 
 /* ESERCIZIO 9
-  Controlla se un numero fornito è pari o dispari.
+  Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 let checkNum = 4;
@@ -120,33 +127,33 @@ if (val < 5) {
 }
 
 /* ESERCIZIO 11
-  Aggiungi la proprietà "city" all'oggetto.
+  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
 };
 me.city = "Toronto";
 console.log(me);
 
 /* ESERCIZIO 12
-  Rimuovi la proprietà "lastName" dall'oggetto.
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 delete me.lastName;
 console.log(me);
 
 /* ESERCIZIO 13
-  Rimuovi l'ultimo elemento della proprietà "skills".
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 me.skills.pop();
 console.log(me);
 
 /* ESERCIZIO 14
-  Crea un array vuoto e riempilo con i numeri da 1 a 10.
+  Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 let numbersArray = [];
@@ -156,7 +163,7 @@ for (let i = 1; i <= 10; i++) {
 console.log(numbersArray);
 
 /* ESERCIZIO 15
-  Sostituisci l'ultimo elemento dell'array con il valore 100.
+  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 numbersArray[numbersArray.length - 1] = 100;
