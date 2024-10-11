@@ -20,6 +20,25 @@ for (let i = 0; i < pets.length; i++) {
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
 
+// PRIMA VERSIONE 
+
+let j = 0;
+let result;
+let scambia;
+
+for (let j = 0; j < pets.length - 1; j++) {
+  for (let i = 0; i < pets.length - 1 - j; i++) {
+    if (pets[i].localeCompare(pets[i + 1]) > 0) {
+      let scambia = pets[i];
+      pets[i] = pets[i + 1];
+      pets[i + 1] = scambia;
+    }
+  }
+}
+console.log(pets);
+
+// SECONDA VERSIONE
+
 pets.sort();
 console.log(pets);
 
