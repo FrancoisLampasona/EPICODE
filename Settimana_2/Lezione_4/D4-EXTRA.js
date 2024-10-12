@@ -104,13 +104,35 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function isNotSpam(emailContent) {
+  const upperCaseContent = emailContent.toUpperCase();
+
+  if (upperCaseContent.includes("SPAM") || upperCaseContent.includes("SCAM")) {
+    return false;
+  }
+
+  return true;
+}
+
+console.log(isNotSpam("This is a legitimate email."));
+console.log(isNotSpam("Beware, this might be a SCAM."));
+console.log(isNotSpam("SPAM ALERT: Special offer!"));
 
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function daysSince(date) {
+  const today = new Date();
+
+  const pastDate = new Date(date);
+
+  const differenceInTime = today - pastDate;
+
+  const differenceInDays = Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
+
+  return differenceInDays;
+}
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
