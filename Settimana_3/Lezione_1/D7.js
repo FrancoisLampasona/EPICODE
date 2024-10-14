@@ -256,7 +256,7 @@ console.log(array_2000_film);
 */
 
 const sum = movies.reduce((acc, film) => {
-  return acc + film.Year;
+  return acc + parseInt(film.Year);
 }, 0);
 console.log(sum);
 
