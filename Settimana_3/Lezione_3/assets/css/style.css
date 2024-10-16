@@ -94,5 +94,6 @@ form button:hover {
 }
 
 #task_section {
+  margin-left: 10vw;
   margin-bottom: 5vw;
 }
