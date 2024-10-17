@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const button_section = document.getElementById("button-section");
 const generateButton = document.getElementById("generate-number");
+
 let array_numeri_usciti = [];
 
 generateButton.addEventListener("click", function () {
