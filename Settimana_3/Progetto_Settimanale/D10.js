@@ -173,8 +173,7 @@ console.log("5) " + onlyLetters("I have 4 dogs"));
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
-
-// Non uso regex perchè non mi va di usare chatGPT ,non conosco bene la sintassi e non voglio usare aiuti. 
+// Non uso regex perchè non mi va di usare chatGPT ,non conosco bene la sintassi e non voglio usare aiuti.
 
 let isThisAnEmail = function (stringa) {
   let array_caratteri_validi = ["@", "."];
@@ -423,14 +422,12 @@ let sumAllTheYears = function (movies) {
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
-// Ho messo solo i titoli in stampa sul Browser per semplicità , ma si può avere l'oggetto per intero levando .title
-
 let searchByTitle = function (stringa, movies) {
   let array_film_con_stringa = [];
 
   for (let i = 0; i < movies.length; i++) {
     if (movies[i].Title.includes(stringa)) {
-      array_film_con_stringa.push(movies[i].Title);
+      array_film_con_stringa.push(movies[i]);
     }
   }
   return array_film_con_stringa;
@@ -441,8 +438,6 @@ let searchByTitle = function (stringa, movies) {
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
-// Ho messo solo i titoli in stampa sul Browser per semplicità , ma si può avere l'oggetto per intero levando .title
-
 let searchAndDivide = function (stringa, movies) {
   let oggetto = {
     match: [],
@@ -451,9 +446,9 @@ let searchAndDivide = function (stringa, movies) {
 
   for (let i = 0; i < movies.length; i++) {
     if (movies[i].Title.includes(stringa)) {
-      oggetto.match.push(movies[i].Title);
+      oggetto.match.push(movies[i]);
     } else {
-      oggetto.unmatch.push(movies[i].Title);
+      oggetto.unmatch.push(movies[i]);
     }
   }
   return oggetto;
@@ -503,8 +498,6 @@ let stampa_TD = function () {
     console.log(elemento_dom_tag[i].innerText);
   }
 };
-
-stampa_TD();
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
@@ -584,8 +577,6 @@ let halfTree = function (number) {
   return stringa;
 };
 
-console.log("27)" + halfTree(3));
-
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -609,9 +600,6 @@ let tree = function (number) {
   }
   console.log(stringa);
 };
-
-console.log("28)");
-tree(5);
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
@@ -750,8 +738,8 @@ console.log("13) " + "" + countMovies(movies));
 console.log("14) " + "" + onlyTheYears(movies));
 console.log("15) " + "" + onlyInLastMillennium(movies));
 console.log("16) " + "" + sumAllTheYears(movies));
-console.log("17) " + "" + searchByTitle("Lord", movies));
-
+console.log("17) ");
+console.log(searchByTitle("Lord", movies));
 let oggetto_con_film = searchAndDivide("Lord", movies);
 console.log("18)");
 console.log(oggetto_con_film.match);
@@ -762,10 +750,13 @@ let oggetto_film_rimosso_da_indice = removeIndex(5, movies);
 console.log(oggetto_film_rimosso_da_indice);
 console.log("20) " + elemento_dom_id.innerText);
 console.log("21) " + elemento_dom_tag[0].innerText);
-
-console.log("23) Fa i link gialli");
+console.log("22) ");
+stampa_TD();
+console.log("23) Fa i link rossi");
 console.log("24) Aggiungie un nuovo Elemento alla lista");
 let elemento_dom_li = aggiungi_Elemento_Alla_Lista();
-
-console.log("29)");
-console.log(isItPrime(5));
+console.log("27)" + halfTree(3));
+console.log("28)");
+tree(5);
+let numero = 5;
+console.log(`29) Il numero : ${numero} è primo ?` + " " + isItPrime(5));
