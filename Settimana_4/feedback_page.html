@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/reset/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/feedback_page.css" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <img src="/assets/image/epicode_logo.png" alt="logo_epicode" />
+    </header>
+    <main>
+      <h1 class="martino">Tell us how it's going</h1>
+      <h2 class="martino">
+        From 0 to 10, how likely are you to recommend EPICODE
+      </h2>
+      <img
+        class="martino"
+        id="martino"
+        src="/assets/image/martino_ascolta.jpg"
+        alt="martino_ascolta"
+      />
+      <p class="martino">to a friend or a colleague?</p>
+      <form class="invio">
+        <div id="stelline">
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+          <span class="star"><i class="fas fa-star"></i></span>
+        </div>
+        <h3 class="martino">
+          Leave us an open feedback about your experience so far
+        </h3>
+        <textarea
+          id="color"
+          class="martino"
+          maxlength="400"
+          type="textarea"
+          placeholder="Write your comment here !"
+        ></textarea>
+      </form>
+    </main>
+    <footer>
+      <button id="button" class="martino" type="submit" onclick="invia">
+        MORE INFO
+      </button>
+    </footer>
+    <script src="/scripts/feedback_page.js"></script>
+  </body>
+</html>
