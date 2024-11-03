@@ -1,0 +1,382 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+/* HEADER */
+
+header {
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: background-color 0.5s ease;
+}
+
+.scrolled {
+  background-color: white;
+}
+
+#header #header_container nav ul .bottone_cambiato {
+  background-color: #1a8917;
+}
+
+#header_container {
+  height: 75px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header_container nav ul li {
+  display: inline;
+  font-size: 0.7em;
+  margin: 10px;
+}
+
+#header_container nav ul li:last-child {
+  background-color: #191919;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* MAIN */
+
+/* HERO */
+#hero {
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+  position: relative;
+}
+
+#hero_container {
+  width: 70%;
+  margin: 0 auto;
+  height: 400px;
+}
+
+#hero_container h1 {
+  font-size: 5rem;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#hero_container p {
+  font-size: 1.2rem;
+  width: 33%;
+  margin-bottom: 30px;
+}
+
+#hero_button {
+  background-color: #191919;
+  width: max-content;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 45px;
+}
+
+#hero_destra {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* TRENDING */
+
+#trending {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+}
+
+#trending_container {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 40px;
+  height: max-content;
+}
+
+#titolo_trending {
+  display: flex;
+  align-items: center;
+}
+
+#titolo_trending img {
+  margin-right: 10px;
+}
+
+#contenuto_trending {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+  align-content: flex-start;
+}
+
+#trending_container .card {
+  display: flex;
+  width: 33%;
+  margin-bottom: 20px;
+}
+
+#trending_container .numero_card {
+  font-size: 2rem;
+  font-weight: 800;
+  color: gray;
+  opacity: 0.3;
+  padding-right: 20px;
+}
+
+#trending_container .content_card {
+  padding: 5px;
+}
+
+#trending_container .author_card,
+#content_page .author_article {
+  display: flex;
+  align-items: center;
+}
+
+#trending_container .author_card img,
+#content_page .author_article img {
+  border-radius: 50%;
+  width: 15px;
+  margin-right: 10px;
+}
+#trending_container .borderRadius_inferiore img,
+#content_page .borderRadius_inferiore img {
+  border-radius: 5px;
+}
+
+#trending_container .author_card span,
+#content_page .author_article span {
+  font-size: 0.6rem;
+}
+
+#trending_container .author_card > span,
+#content_page .author_article > span {
+  font-weight: 800;
+}
+
+#trending_container .author_card span > span,
+#content_page .author_article span > span {
+  font-weight: normal;
+}
+
+#trending_container h4 {
+  margin: 10px 0;
+  font-size: 0.7rem;
+}
+
+#trending_container .date_card,
+#content_page .date_article {
+  font-size: 0.8em;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+
+/* MAIN PAGE */
+#content_page {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+}
+
+#end {
+  width: 40%;
+  position: sticky;
+  top: 75px;
+  padding-left: 110px;
+  height: 100%;
+}
+
+#container_aside {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside h5 {
+  font-size: 0.5em;
+}
+
+#container_aside .bottone_aside {
+  padding: 10px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(128, 128, 128, 0.26);
+  margin: 0 0 10px 10px;
+}
+
+#fakefooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fakefooter a {
+  font-size: 0.8rem;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #191919;
+}
+
+#content_page > section {
+  width: 60%;
+}
+
+#content_page h4 {
+  margin: 10px 0;
+}
+
+#content_page article {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#content_page .content_article {
+  width: 70%;
+}
+
+#content_page article > img {
+  width: 30%;
+  object-fit: contain;
+}
+
+#content_page p {
+  font-size: 0.7rem;
+  margin: 10px 20px 10px 0;
+  color: gray;
+}
+
+.date_article {
+  position: relative;
+}
+
+.date_article img:last-child {
+  position: absolute;
+  right: 20px;
+}
+
+.date_article span span {
+  background-color: rgb(221, 221, 221);
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #header_container,
+  #hero_container,
+  #trending_container,
+  #content_page {
+    width: 90%;
+  }
+  #hero {
+    overflow: hidden;
+  }
+  #hero_container p {
+    width: 50%;
+  }
+  #trending_container .card {
+    width: 47%;
+  }
+  #contenuto_trending {
+    justify-content: space-between;
+  }
+  #content_page {
+    flex-direction: column;
+  }
+  #content_page section {
+    order: 1;
+    width: 100%;
+  }
+  #end {
+    width: 100%;
+    position: static;
+    padding-left: 0;
+  }
+  aside h5 {
+    font-size: 0.8em;
+  }
+  #hero_destra {
+    margin-right: -200px;
+  }
+  #trending_container h4 {
+    font-size: 1em;
+  }
+  #trending_container .author_card img,
+  #content_page .author_article img {
+    width: 23px;
+  }
+  #trending_container .author_card span,
+  #content_page .author_article span {
+    font-size: 0.8rem;
+  }
+  #trending_container .borderRadius_inferiore img,
+  #content_page .borderRadius_inferiore img {
+    border-radius: 50%;
+  }
+  .date_card img {
+    display: none;
+  }
+  .date_card > span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #content_page p {
+    font-size: 1rem;
+  }
+  #content_page h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #hero_destra {
+    display: none;
+  }
+  #header_container nav ul li:nth-child(1),
+  #header_container nav ul li:nth-child(2),
+  #header_container nav ul li:nth-child(3) {
+    display: none;
+  }
+  #hero_container p {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  #trending_container .card {
+    width: 100%;
+  }
+  #hero_container h1 {
+    font-size: 3.5rem;
+  }
+  #hero_container {
+    height: 300px;
+  }
+  #header_container nav ul li {
+    font-size: 0.8em;
+  }
+  #trending_container .numero_card {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  #header_container nav ul li {
+    font-size: 0.6em;
+  }
+}
