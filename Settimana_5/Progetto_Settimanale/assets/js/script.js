@@ -1,37 +1,35 @@
-window.addEventListener('scroll', function() {
-    const header = document.getElementsByTagName('header')[0]
-    const content = document.getElementById('trending')
-    const bottone = document.getElementById('bottone')
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  const trendingContent = document.getElementById("trending");
+  const button = document.getElementById("bottone");
 
-    const headerHeight = header.offsetHeight;
-    const contentTop = content.getBoundingClientRect().top
+  const headerHeight = header.offsetHeight;
+  const contentTop = trendingContent.getBoundingClientRect().top;
 
-    if (contentTop <= headerHeight) {
-        header.classList.add('scrolled')
-        bottone.classList.add('bottone_cambiato')
-    } else {
-        header.classList.remove('scrolled')
-        bottone.classList.remove('bottone_cambiato')
-    }
-})
+  if (contentTop <= headerHeight) {
+    header.classList.add("scrolled");
+    button.classList.add("bottone_cambiato");
+  } else {
+    header.classList.remove("scrolled");
+    button.classList.remove("bottone_cambiato");
+  }
+});
 
-const arrayNumerica = (elemento, qtty, array) => {
-    let arrayNew = [];
-    for (let i=0; i < qtty; i++) {
-        let random = Math.floor(Math.random() * elemento.length)
-        arrayNew.push(elemento[random])
-    }
-    return arrayNew
-}
+const generaArrayCasuale = (elementi, quantita) => {
+  let arrayCasuale = [];
+  for (let i = 0; i < quantita; i++) {
+    const indiceCasuale = Math.floor(Math.random() * elementi.length);
+    arrayCasuale.push(elementi[indiceCasuale]);
+  }
+  return arrayCasuale;
+};
 
-window.addEventListener('load', function(e) {
-    const elements = document.querySelectorAll('g[stroke-linecap=butt]')
-    setInterval(() => {
-        let random = Math.floor(Math.random() * elements.length)
-        if (elements[random].getAttribute('opacity') === "1") {
-            elements[random].setAttribute('opacity', "0")
-        } else {
-            elements[random].setAttribute('opacity', "1")
-        }
-    }, 100)
-})
+window.addEventListener("load", function () {
+  const elementi = document.querySelectorAll("g[stroke-linecap=butt]");
+  setInterval(() => {
+    const indiceCasuale = Math.floor(Math.random() * elementi.length);
+    const elemento = elementi[indiceCasuale];
+    const opacity = elemento.getAttribute("opacity") === "1" ? "0" : "1";
+    elemento.setAttribute("opacity", opacity);
+  }, 100);
+});
