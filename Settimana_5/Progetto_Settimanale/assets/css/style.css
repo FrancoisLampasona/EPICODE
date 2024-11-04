@@ -37,7 +37,7 @@ header {
 
 #header_container nav ul li {
   display: inline;
-  font-size: 0.7em;
+  font-size: 0.9em;
   margin: 10px;
 }
 
@@ -159,7 +159,7 @@ header {
 
 #trending_container .author_card span,
 #content_page .author_article span {
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 #trending_container .author_card > span,
@@ -174,12 +174,12 @@ header {
 
 #trending_container h4 {
   margin: 10px 0;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 #trending_container .date_card,
 #content_page .date_article {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: gray;
   display: flex;
   align-items: center;
@@ -207,6 +207,7 @@ header {
 }
 
 aside h5 {
+  margin-bottom: 0.5rem;
   font-size: 0.5em;
 }
 
@@ -342,6 +343,7 @@ a:visited {
   }
   #content_page h4 {
     font-size: 1.2rem;
+    font-weight: bold;
   }
 }
 
@@ -378,5 +380,9 @@ a:visited {
 @media screen and (max-width: 475px) {
   #header_container nav ul li {
     font-size: 0.6em;
+  }
+  #trending_container .date_card,
+  #content_page .date_article {
+    font-size: 0.5em;
   }
 }
