@@ -23,33 +23,33 @@
         <h1 class="text-center text-dark p-4">Form Acquisizione Dati</h1>
       </div>
     </header>
-    <main>
-      <div class="container">
+    <main class="d-flex justify-content-center">
+      <div class="container" style="max-width: 500px; margin-top: 12%">
+        <h1 style="font-weight: bold; font-style: italic" class="text-center">
+          Nessun Nome Presente
+        </h1>
         <form>
-          <!-- Row per il campo input -->
-          <div class="row d-flex col-12">
-            <div class="text-dark d-flex align-items-center">
-              <label for="exampleInputEmail1" class="form-label mb-0"
-                >Inserisci il nome :</label
-              >
-            </div>
-            <div class="col-4">
-              <input
-                type="text"
-                class="form-control"
-                id="exampleInputEmail1"
-                placeholder="Nome"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="text-dark d-flex flex-column align-items-center">
+            <label for="exampleInputEmail1" class="form-label mb-2"
+              >Inserisci il nome:</label
+            >
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="name"
+              placeholder="Nome"
+            />
+
+            <div class="d-flex justify-content-center gap-2 mt-2">
+              <button type="submit" class="btn btn-primary">Salva</button>
+              <button type="submit" class="btn btn-danger">Elimina</button>
             </div>
           </div>
         </form>
+        <h2 id="timer" class="text-center text-black mt-4"></h2>
       </div>
     </main>
+    <script src="./script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
