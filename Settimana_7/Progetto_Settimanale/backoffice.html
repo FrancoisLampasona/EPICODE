@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BackOffice</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/img/Orange Juice SVG.svg"
+      sizes="64x64"
+    />
+  </head>
+
+  <body class="d-flex flex-column vh-100">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="
+          background: linear-gradient(45deg, #250b41, #53139c);
+          border-radius: 0 0 10px 10px;
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              style="height: 100px; width: auto"
+              src="./assets/img/Orange Juice.png"
+              alt="Bevrage"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-3 fw-bolder text-white"
+                  aria-current="page"
+                  href="./index.html"
+                  >Back To Home</a
+                >
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow-1">
+      <h1 class="text-center mt-4">Scegli cosa fare !</h1>
+
+      <section class="container mt-4 gap-3">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-3 mb-3">
+            <button
+              style="background: linear-gradient(45deg, #7722d1, #53139c)"
+              id="section-creazione"
+              type="button"
+              onclick=""
+              class="btn btn-primary btn-lg w-100"
+            >
+              Creazione Prodotto
+            </button>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <button
+              style="background: linear-gradient(45deg, #ffde08, #a60404)"
+              id="section-modifica"
+              type="button"
+              onclick="ModificaProdotti()"
+              class="btn btn-warning btn-lg w-100 text-white"
+            >
+              Edit\Delate Prodotto
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="Creazione-Prodotto"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="my-4">Creazione Prodotti :</h1>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-6 col-xl-4">
+              <button
+                style="background: linear-gradient(45deg, #7722d1, #53139c)"
+                type="button"
+                onclick="CreateCard()"
+                class="btn btn-primary btn-lg w-100"
+              >
+                Aggiungi
+              </button>
+            </div>
+            <div class="col-6 col-md-6 col-xl-4 mb-5">
+              <button
+                style="background: linear-gradient(45deg, #7722d1, #53139c)"
+                type="button"
+                onclick="RemoveCard()"
+                class="btn btn-primary btn-lg w-100 text-white"
+              >
+                Togli
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row ms-4 ms-md-0"></div>
+        </div>
+      </section>
+
+      <section
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container">
+          <h1 class="my-4 text-center">Modifica i prodotti :</h1>
+          <div class="row ms-4 ms-md-0" id="Modifica-Prodotto"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="text-white text-center py-4 mt-auto"
+      style="
+        background: linear-gradient(45deg, #250b41, #53139c);
+        border-radius: 10px 10px 0 0;
+      "
+    >
+      <p class="mb-2" style="font-size: 1.25rem; font-weight: bold">
+        Creatore: Francois Lampasona
+      </p>
+      <p class="mb-0" style="font-size: 1rem">Data: 15/11/2024</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/javascript/backoffice.js"></script>
+  </body>
+</html>
