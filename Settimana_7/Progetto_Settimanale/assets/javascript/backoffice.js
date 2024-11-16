@@ -242,7 +242,10 @@ const ModifyCard = function (element) {
         <div class="card-body text-center">
           <button class="btn btn-outline-success" onclick="SaveChanges('${
             element._id
-          }')">Salva</button>
+          }')">Salva</button>  
+          <button class="btn btn-outline-warning" onclick="ResetProduct('${
+            element._id
+          }')">Reset</button>
           <button class="btn btn-outline-danger" onclick="DeleteProduct('${
             element._id
           }')">Elimina</button>
@@ -295,6 +298,19 @@ const DeleteProduct = function (id) {
     .catch((error) => {
       console.error("Errore:", error);
     });
+};
+
+const ResetProduct = function (id) {
+
+  const name = document.getElementById(`Name-${id}`);
+  const description = document.getElementById(`Description-${id}`);
+  const brand = document.getElementById(`Brand-${id}`);
+  const price = document.getElementById(`Price-${id}`);
+
+  name.value = "";
+  description.value = "";
+  brand.value = "";
+  price.value = "";
 };
 
 const API_IMAGE_KEY =
