@@ -15,125 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   creaColonnaDX(colonnaDestra);
   creaColonnaSX(colonnaSinistra);
-
 });
-
-const creaColonnaDX = function (colonnaDX) {
-  colonnaDX.innerHTML = `       <div class="p-4">
-  <!-- Header -->
-  <div
-    class="header d-flex justify-content-between align-items-center flex-column mt-4"
-  >
-    <h4 class="text-light fs-6">Attività amici</h4>
-    <div class="icons">
-      <i class="bi bi-person-plus text-light fs-5 me-4"></i>
-      <i id="icon-x" class="bi bi-x-lg text-light fs-5"></i>
-    </div>
-  </div>
-  <hr class="text-white my-4" />
-
-  <!-- Scrollable Section -->
-  <div class="scrollable-section text-white">
-    <ul class="list-unstyled text-white">
-      <!-- Singolo elemento -->
-      <li
-        class="list-item rounded-2 d-flex justify-content-between align-items-center p-3"
-      >
-        <div class="content d-flex flex-column align-items-center">
-          <div
-            class="avatar-wrapper d-flex justify-content-center align-items-center bg-light"
-            style="width: 65px; height: 65px; border-radius: 10px"
-          >
-            <img
-              src="./assets/imgs/imgProfile/user_1.jpg"
-              class="img-fluid"
-              style="
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              "
-              alt="Charlie Hookham"
-            />
-          </div>
-          <div class="details mt-3 text-center text-white">
-            <h6 class="mb-1">Charlie Hookham</h6>
-            <p class="mb-0">In Camera · Yumi Zouma</p>
-            <p class="mb-0">
-              <i class="bi bi-pause-circle"></i> EP III
-              <span class="hour text-muted mb-0 ps-4">4 ore</span>
-            </p>
-          </div>
-        </div>
-      </li>
-
-      <li
-        class="list-item rounded-2 d-flex justify-content-between align-items-center p-3"
-      >
-        <div class="content d-flex flex-column align-items-center">
-          <div
-            class="avatar-wrapper d-flex justify-content-center align-items-center bg-light"
-            style="width: 65px; height: 65px; border-radius: 10px"
-          >
-            <img
-              src="./assets/imgs/imgProfile/user_2.jpg"
-              class="img-fluid"
-              style="
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              "
-              alt="lightdark02"
-            />
-          </div>
-          <div class="details mt-3 text-center text-white">
-            <h6 class="mb-1">lightdark02</h6>
-            <p class="mb-0">Aimed to kill · Jade LeMac</p>
-            <p class="mb-0">
-              <i class="bi bi-pause-circle"></i> Aimed to Kill
-              <span class="hour text-muted mb-0 ps-4">8 ore</span>
-            </p>
-          </div>
-        </div>
-      </li>
-
-      <li
-        class="list-item rounded-2 d-flex justify-content-between align-items-center p-3"
-      >
-        <div class="content d-flex flex-column align-items-center">
-          <div
-            class="avatar-wrapper d-flex justify-content-center align-items-center bg-light"
-            style="width: 65px; height: 65px; border-radius: 10px"
-          >
-            <img
-              src="./assets/imgs/imgProfile/user_3.jpg"
-              class="img-fluid"
-              style="
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              "
-              alt="Valeria Traverso"
-            />
-          </div>
-          <div class="details mt-3 text-center text-white">
-            <h6 class="mb-1">Valeria Traverso</h6>
-            <p class="mb-0">New Kings · Sleeping wolf</p>
-            <p class="mb-0">
-              <i class="bi bi-music-note-beamed"></i> Twist bedass
-              mood
-              <span class="hour text-muted mb-0 ps-5">4 ore</span>
-            </p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-};
 
 const creaColonnaSX = function (colonnaSX) {
   colonnaSX.innerHTML = `            
@@ -433,6 +315,124 @@ const creaColonnaSX = function (colonnaSX) {
    </div>
  </div>`;
 };
+
+const creaColonnaDX = function (colonnaDX) {
+  colonnaDX.innerHTML = `       <div class="p-4">
+  <!-- Header -->
+  <div
+    class="header d-flex justify-content-between align-items-center flex-column mt-4"
+  >
+    <h4 class="text-light fs-6">Attività amici</h4>
+    <div class="icons">
+      <i class="bi bi-person-plus text-light fs-5 me-4"></i>
+      <i id="icon-x" class="bi bi-x-lg text-light fs-5"></i>
+    </div>
+  </div>
+  <hr class="text-white my-4" />
+
+  <!-- Scrollable Section -->
+  <div class="scrollable-section text-white">
+    <ul class="list-unstyled text-white">
+      <!-- Singolo elemento -->
+      <li
+        class="list-item rounded-2 d-flex justify-content-between align-items-center p-3"
+      >
+        <div class="content d-flex flex-column align-items-center">
+          <div
+            class="avatar-wrapper d-flex justify-content-center align-items-center bg-light"
+            style="width: 65px; height: 65px; border-radius: 10px"
+          >
+            <img
+              src="./assets/imgs/imgProfile/user_1.jpg"
+              class="img-fluid"
+              style="
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              "
+              alt="Charlie Hookham"
+            />
+          </div>
+          <div class="details mt-3 text-center text-white">
+            <h6 class="mb-1">Charlie Hookham</h6>
+            <p class="mb-0">In Camera · Yumi Zouma</p>
+            <p class="mb-0">
+              <i class="bi bi-pause-circle"></i> EP III
+              <span class="hour text-muted mb-0 ps-4">4 ore</span>
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li
+        class="list-item rounded-2 d-flex justify-content-between align-items-center p-3"
+      >
+        <div class="content d-flex flex-column align-items-center">
+          <div
+            class="avatar-wrapper d-flex justify-content-center align-items-center bg-light"
+            style="width: 65px; height: 65px; border-radius: 10px"
+          >
+            <img
+              src="./assets/imgs/imgProfile/user_2.jpg"
+              class="img-fluid"
+              style="
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              "
+              alt="lightdark02"
+            />
+          </div>
+          <div class="details mt-3 text-center text-white">
+            <h6 class="mb-1">lightdark02</h6>
+            <p class="mb-0">Aimed to kill · Jade LeMac</p>
+            <p class="mb-0">
+              <i class="bi bi-pause-circle"></i> Aimed to Kill
+              <span class="hour text-muted mb-0 ps-4">8 ore</span>
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li
+        class="list-item rounded-2 d-flex justify-content-between align-items-center p-3"
+      >
+        <div class="content d-flex flex-column align-items-center">
+          <div
+            class="avatar-wrapper d-flex justify-content-center align-items-center bg-light"
+            style="width: 65px; height: 65px; border-radius: 10px"
+          >
+            <img
+              src="./assets/imgs/imgProfile/user_3.jpg"
+              class="img-fluid"
+              style="
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              "
+              alt="Valeria Traverso"
+            />
+          </div>
+          <div class="details mt-3 text-center text-white">
+            <h6 class="mb-1">Valeria Traverso</h6>
+            <p class="mb-0">New Kings · Sleeping wolf</p>
+            <p class="mb-0">
+              <i class="bi bi-music-note-beamed"></i> Twist bedass
+              mood
+              <span class="hour text-muted mb-0 ps-5">4 ore</span>
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+};
+
 
 const esci = function () {
   localStorage.removeItem("FlagLogin");
