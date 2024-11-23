@@ -2,3 +2,7 @@
     width: inherit;
   }
   
+#imgUtenteMenu{
+  width: 40px;
+  object-fit: cover;
+}

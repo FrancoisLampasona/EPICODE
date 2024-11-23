@@ -82,7 +82,8 @@
               class="container-fluid scrol d-flex flex-column pb-5 mb-5 pb-lg-0 pmb-lg-0"
             >
               <div
-                class="position-relative top-0 start-0 w-100 d-flex justify-content-between align-items-start p-3"
+                id="optionAlte"
+                class="start-0 w-100 d-flex justify-content-between align-items-start p-3"
               >
                 <!-- Freccia (dispositivi piccoli e grandi) -->
                 <i
@@ -103,14 +104,13 @@
                   >
                     <img
                       id="imgUtenteMenu"
-                      src="./assets/imgs/imgProfile/user_7.jpg"
+                      src="./assets/imgs/imgProfile/user_5.jpg"
                       class="rounded-circle me-2"
-                      style="width: auto"
                       width="40"
                       height="40"
                       alt="User Avatar"
                     />
-                    <span id="nomeUtenteMenu"> Serena Ferraro</span>
+                    <span id="nomeUtenteMenu"> Francois Lampasona</span>
                   </button>
                   <ul
                     class="dropdown-menu bg-dark border-0 shadow-lg"
@@ -138,17 +138,20 @@
                   </ul>
                   <button
                     id="amici"
+                    onclick="listaAmici()"
                     class="btn btn-dark rounded-pill mt-3 ms-3 d-none d-xl-block fs-5"
                   >
                     Lista amici
                   </button>
                 </div>
               </div>
-              <a
+              <h1
                 href="search.html"
-                class="text-white mb-2 fs-1 ps-3 text-decoration-none"
-                >Cerca</a
+                class="text-white mb-3 ps-2 fs-1 text-decoration-none"
               >
+                Cerca
+              </h1>
+
               <form class="d-flex rounded-3 fs-3" role="search">
                 <button
                   class="border-0 ms-2 bg-transparent text-white"
@@ -328,7 +331,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/JS/search.js"></script>
-    <script src="./assets/JS/music.js"></script>
     <script src="./assets/JS/utility.js"></script>
   </body>
 </html>

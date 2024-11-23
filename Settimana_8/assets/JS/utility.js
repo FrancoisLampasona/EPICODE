@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const nomeUtenteMenu = document.getElementById("nomeUtenteMenu");
 
   const UtenteSalvato = JSON.parse(localStorage.getItem("User"));
-  console.log(UtenteSalvato);
 
   if (UtenteSalvato) {
     imgProfile.setAttribute("src", `${UtenteSalvato.urlIMG}`);
@@ -325,7 +324,7 @@ const creaColonnaDX = function (colonnaDX) {
     <h4 class="text-light fs-6">Attività amici</h4>
     <div class="icons">
       <i class="bi bi-person-plus text-light fs-5 me-4"></i>
-      <i id="icon-x" class="bi bi-x-lg text-light fs-5"></i>
+      <i onclick ="chiudiColonna()" id="icon-x" class="bi bi-x-lg text-light fs-5"></i>
     </div>
   </div>
   <hr class="text-white my-4" />
@@ -346,7 +345,7 @@ const creaColonnaDX = function (colonnaDX) {
               src="./assets/imgs/imgProfile/user_1.jpg"
               class="img-fluid"
               style="
-                border-radius: 10px;
+                border-radius: 10px; 
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -433,6 +432,25 @@ const creaColonnaDX = function (colonnaDX) {
 `;
 };
 
+const colonnaCentrale = document.getElementById("colonna-centrale");
+const colonnaDestra = document.getElementById("colonna-destra");
+
+const listaAmici = function () {
+  const amici = document.getElementById("amici");
+  colonnaCentrale.classList.remove("col-xl-9");
+  colonnaCentrale.classList.add("col-xl-7");
+  colonnaDestra.classList.remove("d-none");
+  colonnaDestra.classList.add("col-xl-block");
+  amici.classList.remove("d-xl-block");
+};
+
+const chiudiColonna = function () {
+  colonnaCentrale.classList.add("col-xl-9");
+  colonnaCentrale.classList.remove("col-xl-7");
+  colonnaDestra.classList.add("d-none");
+  colonnaDestra.classList.remove("col-xl-block");
+  amici.classList.add("d-xl-block");
+};
 
 const esci = function () {
   localStorage.removeItem("FlagLogin");

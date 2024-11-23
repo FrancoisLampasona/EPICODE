@@ -18,6 +18,17 @@ header > nav {
 
 /* NAVBAR MOBILE */
 
+#optionAlte{
+  height: auto;
+  background-color: unset;
+  border-radius: 0;
+}
+
+#imgUtenteMenu{
+  width: 40px;
+  object-fit: cover;
+}
+
 .col img {
   width: 18.5vh;
   object-fit: contain;

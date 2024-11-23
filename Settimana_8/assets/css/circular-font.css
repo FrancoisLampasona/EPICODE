@@ -47,11 +47,6 @@ header > nav {
   overflow-x: hidden;
 }
 
-/* main {
-  height: calc(100vh - 95px);
-  overflow-y: auto;
-} */
-
 ul.list-unstyled li:hover {
   background-color: #333;
   border-radius: 8px;
@@ -101,6 +96,10 @@ ul.list-unstyled li:hover .bg-success {
 #colonna-destra {
   border: 0;
   border-radius: 0px 30px 30px 0px;
+}
+
+.dropdown-item:hover {
+  background-color: #4b4c4dc7;
 }
 
 @font-face {
