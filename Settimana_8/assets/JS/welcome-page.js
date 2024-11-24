@@ -4,6 +4,7 @@ if (
 ) {
   window.location.href = "./homepage.html";
 } else {
+  
   function hideIndicators() {
     const indicators = document.querySelector(".carousel-indicators");
     if (indicators) {

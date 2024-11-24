@@ -12,6 +12,7 @@ class SpotifyUser {
 }
 
 const datiDB = JSON.parse(localStorage.getItem("User"));
+console.log(datiDB);
 const row_item = document.getElementsByClassName("listInfo");
 
 row_item[0].innerHTML = ` 
@@ -106,8 +107,15 @@ const Modifica = function () {
       eta,
       paese,
       email,
-      password
+      password,
+      ""
     );
+
+    if (UserModificato.sesso === "Maschio") {
+      UserModificato.urlIMG = "./assets/imgs/imgProfile/user_5.jpg";
+    } else {
+      UserModificato.urlIMG = "./assets/imgs/imgProfile/user_7.jpg";
+    }
 
     localStorage.setItem("User", JSON.stringify(UserModificato));
     alert("Dati salvati con successo!");
@@ -124,7 +132,4 @@ const Modifica = function () {
 };
 
 const ProfileImg = document.getElementById("ProfileImg");
-console.log(datiDB.urlIMG);
-console.log(ProfileImg);
 ProfileImg.setAttribute("src", `${datiDB.urlIMG}`);
-
