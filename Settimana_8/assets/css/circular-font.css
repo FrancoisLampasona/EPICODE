@@ -11,6 +11,7 @@ body {
   transform: scale(0.97);
 }
 
+
 ::-webkit-scrollbar {
   width: var(--sb-size);
 }
@@ -80,6 +81,14 @@ ul.list-unstyled li:hover .bg-success {
 
 #colonna-centrale {
   border-radius: 30px;
+  padding-bottom: 75px;
+}
+
+
+@media (min-width: 992px) {
+  #colonna-centrale {
+    padding-bottom: unset;
+  }
 }
 
 @media (min-width: 1200px) {

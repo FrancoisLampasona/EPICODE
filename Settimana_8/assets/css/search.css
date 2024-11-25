@@ -13,18 +13,17 @@ header > nav {
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 0.8157387955182073) 100%
   );
-  margin-left: 10px;
 }
 
 /* NAVBAR MOBILE */
 
-#optionAlte{
+#optionAlte {
   height: auto;
   background-color: unset;
   border-radius: 0;
 }
 
-#imgUtenteMenu{
+#imgUtenteMenu {
   width: 40px;
   object-fit: cover;
 }
@@ -37,7 +36,6 @@ header > nav {
   border-radius: 15px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
-
 
 main .col > div {
   overflow: hidden;
@@ -133,10 +131,20 @@ input:focus {
   height: 50px;
 }
 
-button > span{
+button > span {
   font-size: 1.5em;
 }
 
-#amici{
+#amici {
   font-size: 0.7em;
+}
+
+#Category {
+  padding-bottom: 55px;
+}
+
+@media (min-width: 992px) {
+  #Category {
+    padding-bottom: unset;
+  }
 }
