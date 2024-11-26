@@ -3,9 +3,19 @@
   <head>
     <title>Spotify - Welcome Page</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metatag per configurare la visualizzazione a schermo intero -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Aggiungere un'icona per l'app -->
+    <link
+      rel="apple-touch-icon"
+      href="./assets/imgs/loghi/Spotify_Icon_Green.svg"
     />
 
     <link
@@ -23,6 +33,7 @@
 
     <link rel="stylesheet" href="./assets/css/circular-font.css" />
     <link rel="stylesheet" href="./assets/css/welcomepage.css" />
+    <link rel="manifest" href="manifest.json" />
   </head>
 
   <body class="rounded-5">
@@ -271,7 +282,7 @@
                 </h1>
 
                 <div
-                  class="container-fluid d-flex flex-column justify-content-center align-items-center gap-4 col-10 col-sm-8 col-md-7 col-xl-6 offset-xl-6 mt-4"
+                  class="container-fluid d-flex flex-column justify-content-center align-items-center gap-4 col-10 col-sm-8 col-md-7 col-xl-6 offset-xl-6 mt-4 scrollable-form-container"
                 >
                   <form id="registerForm" class="col-10 col-xl-6">
                     <div class="row">
@@ -288,7 +299,6 @@
                           required
                         />
                       </div>
-
                       <div class="mb-3 col-lg-6">
                         <label for="registerSurname" class="form-label"
                           >Cognome</label
@@ -302,7 +312,6 @@
                           required
                         />
                       </div>
-
                       <div class="mb-3 col-lg-6">
                         <label for="registerGender" class="form-label"
                           >Sesso</label
@@ -319,7 +328,6 @@
                           <option value="Altro">Altro</option>
                         </select>
                       </div>
-
                       <div class="mb-3 col-lg-6">
                         <label for="registerAge" class="form-label">Età</label>
                         <input
@@ -332,7 +340,6 @@
                           required
                         />
                       </div>
-
                       <div class="mb-3 col-lg-6">
                         <label for="registerCountry" class="form-label"
                           >Paese</label
@@ -346,7 +353,6 @@
                           required
                         />
                       </div>
-
                       <div class="mb-3 col-lg-6">
                         <label for="registerEmail" class="form-label"
                           >Email</label
@@ -360,7 +366,6 @@
                           required
                         />
                       </div>
-
                       <div class="mb-3 col-lg-12">
                         <label for="registerPassword" class="form-label"
                           >Password</label
