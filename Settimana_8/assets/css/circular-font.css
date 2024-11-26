@@ -80,7 +80,7 @@ ul.list-unstyled li:hover .bg-success {
 }
 
 #colonna-centrale {
-  border-radius: 30px;
+  border-radius: 0px 30px 30px 0px;
   padding-bottom: 75px;
 }
 
