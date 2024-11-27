@@ -1,7 +1,9 @@
+import { Row } from "react-bootstrap";
 import "./assets/css/App.css";
+import CardBook from "./components/CardBook";
 import FooterComponent from "./components/FooterComponent";
 import NavBar from "./components/navbar";
-import WelcomeAlert from "./components/WelcomeAlert";
+import BookList from "./components/BookList";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
         <NavBar></NavBar>
       </header>
       <main>
-        <WelcomeAlert></WelcomeAlert>
+        <Row>
+          <BookList></BookList>
+        </Row>
       </main>
       <footer>
         <FooterComponent></FooterComponent>
