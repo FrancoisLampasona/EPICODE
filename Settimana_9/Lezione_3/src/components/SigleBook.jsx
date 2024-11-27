@@ -4,15 +4,11 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 class SigleBook extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selected: false, // Stato iniziale del libro
-    };
-  }
+  state = {
+    selected: false,
+  };
 
   handleSelect = () => {
-    // Toggle dello stato 'selected'
     this.setState((prevState) => ({
       selected: !prevState.selected,
     }));
@@ -22,18 +18,14 @@ class SigleBook extends React.Component {
     const { data } = this.props;
     const { selected } = this.state;
 
-    // Condizione per applicare 'bg-warning' se selezionato
     const cardClass = selected ? "bg-warning" : "";
 
     return (
       <Col xs={12} md={6} xl={3} className="mb-3">
-        <Card
-          className={`p-2 text-black ${cardClass}`} // Aggiungi classe 'bg-warning' se selezionato
-          key={data.asin}
-        >
+        <Card className={`p-2 text-black ${cardClass}`} key={data.asin}>
           <div
             className="d-flex justify-content-center"
-            onClick={this.handleSelect} // Gestisci il clic
+            onClick={this.handleSelect}
           >
             <Card.Img
               variant="top"
