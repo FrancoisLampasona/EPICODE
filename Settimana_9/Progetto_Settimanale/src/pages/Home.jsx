@@ -1,8 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import GenereBar from "../components/GenereBar";
-import MediaSection from "../components/MediaSection";
-import VideoModal from "../components/VideoModal";
+import GenereBar from "../components/Home/GenereBar";
+import MediaSection from "../components/Home/MediaSection";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
@@ -16,7 +15,6 @@ const HomePage = () => {
         <MediaSection title="Spider Man" />
         <MediaSection title="Harry Potter" />
         <MediaSection title="Star Wars" />
-        <VideoModal></VideoModal>
       </main>
       <Footer></Footer>
     </>

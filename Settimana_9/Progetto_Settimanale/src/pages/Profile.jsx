@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import EditProfile from "../components/EditProfile";
+import EditProfile from "../components/Profile/EditProfile";
 
 const ProfilePage = () => {
   return (
