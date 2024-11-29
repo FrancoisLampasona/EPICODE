@@ -17,12 +17,11 @@ const FilmCarousel = ({ title, films }) => {
           <Carousel.Item key={idx}>
             <Row className="g-3">
               {chunk.map((film, idx) => (
-                <Col key={idx} xs={12} md={2}>
+                <Col key={idx} xs={6} md={4} xl={2}>
                   <img
                     src={film.Poster}
                     alt={film.Title}
                     className="d-block w-100 card-img-film"
-                    style={{ height: "400px", objectFit: "fill" }}
                   />
                   <p className="text-center text-white mt-2">{film.Title}</p>
                 </Col>
