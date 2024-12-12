@@ -121,3 +121,10 @@ div {
 #Wind-Speed h3 {
   font-size: 1.2rem;
 }
+
+#state-select{
+  color: rgba(63, 60, 60, 0.648);
+  background-color: #ffffebb5;
+  box-shadow: 0 4px 8px rgba(175, 16, 16, 0.2);
+}
+

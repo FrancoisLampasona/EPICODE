@@ -139,7 +139,8 @@ const SearchBar = ({ onWeatherDataReceived }) => {
           id="state-select"
           value={selectedState}
           onChange={handleStateChange}
-          className="me-2"
+          style={{ backgroundColor: "#ffffebb5" }}
+          className="me-2 fst-italic "
         >
           <option value="">Seleziona uno stato</option>
           {states.map((state) => (
@@ -157,6 +158,11 @@ const SearchBar = ({ onWeatherDataReceived }) => {
         <Form.Control
           id="nome-city"
           type="text"
+          style={{
+            color: "rgba(63, 60, 60, 0.648)",
+            backgroundColor: "#ffffebb5",
+            boxShadow: "0 4px 8px rgba(175, 16, 16, 0.2)",
+          }}
           placeholder="Inserisci la città"
           className="me-2"
           value={city}
@@ -164,7 +170,7 @@ const SearchBar = ({ onWeatherDataReceived }) => {
         />
 
         {showDropdown && citySuggestions.length > 0 && (
-          <Container fluid>
+          <Container fluid className="me-3">
             <Dropdown.Menu className="d-flex flex-column" show>
               {citySuggestions.map((suggestion, index) => (
                 <Dropdown.Item
