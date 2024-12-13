@@ -20,16 +20,17 @@ const SideBar = () => {
         <img
           src={appleLogo}
           alt="Apple Music Logo"
-          style={{ width: "30px", height: "30px", marginRight: "16px" }}
+          style={{ width: "30px", height: "30px", marginRight: "5px" }}
+          className="ps-1 ms-3"
         />
-        <h3 className="mb-4 ">Menu</h3>
+        <h3 className="mb-4 ps-3">Music</h3>
       </div>
 
       <Nav className="flex-column fs-5">
         <Container
           fluid
           href="#Search"
-          className="text-dark text-decoration-none mb-3"
+          className="text-dark text-decoration-none mb-3 ps-0 pe-4"
         >
           <SearchBar></SearchBar>
         </Container>
