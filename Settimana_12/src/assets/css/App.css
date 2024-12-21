@@ -1,0 +1,40 @@
+.bg {
+  background-color: #f4f2ee;
+}
+
+.nav-link-custom {
+  color: #212529;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+
+.nav-link-custom2 {
+  color: #212529;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom2:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Sidebar home  */
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  background: rgb(27, 166, 188);
+  background: linear-gradient(
+    90deg,
+    rgba(160, 180, 183, 1) 52%,
+    rgba(217, 229, 231, 1) 66%,
+    rgba(191, 211, 214, 1) 77%
+  );
+}
