@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="/assets/css/reset/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/welcome_page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <img src="/assets/image/epicode_logo.png" alt="logo_epicode" />
+    </header>
+    <main>
+      <h1>Welcome to</h1>
+      <h1 class="bold">your exam</h1>
+      <section>
+        <h4>Instructions</h4>
+        <p>
+          We don't expect most engineers to know the answers to all of these
+          <br />
+          questions, so don't worry if you're unsure of a few of them.
+        </p>
+        <br />
+        <ul id="spostamento_meme">
+          <li>Each question is timed and can only be answered once.</li>
+          <li>
+            Changing browser tab or opening other windows will invalidate the
+            question.
+          </li>
+          <li>This exam will take approx. 0-5 minutes.</li>
+        </ul>
+      </section>
+      <div style="border-radius: 0px">
+        <video
+          id="video_stupido"
+          width="360"
+          height="200"
+          autoplay
+          muted
+          loop
+          style="padding-bottom: 1rem"
+        >
+          <source src="/assets/video/click_video_2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <section id="riga" class="row">
+        <input type="checkbox" id="checkbox" />
+        <p class="condizioni">
+          I promise to answer myself without help from anyone
+        </p>
+        <button id="bottone_2" class="spento">Scegli difficoltà</button>
+        <button id="bottone" class="spento">Proceed</button>
+      </section>
+    </main>
+
+    <div id="difficulty-modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Scegli la difficoltà :</h3>
+        <div class="difficulty-options">
+          <div class="option" data-difficulty="easy">
+            <p class="text-option">
+              Facile
+              <span class="span_option">
+                <span class="span_option">10 Domande</span>"Valter"</span
+              >
+            </p>
+            <img src="/assets/difficolta_svg/Walter_easy.svg" />
+          </div>
+          <div class="option" data-difficulty="medium">
+            <p class="text-option">
+              Intermedia
+              <span class="span_option"
+                >15 Domdande <span class="span_option">"Francois"</span></span
+              >
+            </p>
+            <img src="/assets/difficolta_svg/Francois_intermedia.svg" />
+          </div>
+          <div class="option" data-difficulty="hard">
+            <p class="text-option">
+              Difficile
+              <span class="span_option"
+                >20 Domande<span class="span_option">"Martino"</span></span
+              >
+            </p>
+            <img src="/assets/difficolta_svg/Martino_difficile.svg" />
+          </div>
+        </div>
+        <button id="close-modal">Chiudi</button>
+      </div>
+    </div>
+    <script src="/scripts/welcome_page.js"></script>
+  </body>
+</html>

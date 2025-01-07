@@ -1,0 +1,99 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #283c62,
+    #4a6392,
+    #6d8dc4,
+    #91baf8
+  );
+}
+
+#to_do_list {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#to_do_list h1 {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  margin-top: 10vw;
+  margin-bottom: 5vw;
+}
+
+form button {
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #2e466e;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 13px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+
+form button:hover {
+  background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+  background-color: #415989;
+}
+
+form button:hover {
+  position: relative;
+  top: 1px;
+}
+
+#task_section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  width: 16%;
+  height: 50%;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10vw;
+  margin-left: 2%;
+  margin-right: 15%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, #0c2447, #12abda);
+  -webkit-box-shadow: -2px 5px 10px 0px #171414;
+  -moz-box-shadow: -2px 5px 10px 0px #171414;
+  -o-box-shadow: -2px 5px 10px 0px #171414;
+  box-shadow: -2px 5px 10px 0px #171414;
+  border-radius: 10px;
+}
+
+.contact-card p {
+  font-size: 1.5rem;
+  color: white;
+  font-style: italic;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.contact-card button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  color: rgb(116, 250, 156);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact-card button:hover {
+  color: rgb(255, 255, 255);
+}
+
+#task_section {
+  margin-left: 10vw;
+  margin-bottom: 5vw;
+}
