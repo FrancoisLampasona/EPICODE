@@ -1,18 +1,31 @@
 public class Main {
     public static void main(String[] args) {
-        // Esercizi Lezione 1
-        // Lezione_1_Esercizio_1();
-        // Lezione_1_Esercizio_2();
-        // Lezione_1_Esercizio_3();
 
-        // Esercizi Lezione 2
-        // Lezione_2_Esercizio_1();
-        // Lezione_2_Esercizio_2();
-        // Lezione_2_Esercizio_3();
-        Lezione_2_Esercizio_4();
+        // Esercizi Lezione 1 :
+
+        /*
+         * Lezione_1_Esercizio_1();
+         * Lezione_1_Esercizio_2();
+         * Lezione_1_Esercizio_3();
+         */
+
+        // Esercizi Lezione 2 :
+
+        /*
+         * Lezione_2_Esercizio_1();
+         * Lezione_2_Esercizio_2();
+         * Lezione_2_Esercizio_3();
+         * Lezione_2_Esercizio_4();
+         */
+
+        // Esercizi Lezione 3 :
+        // Lezione_3_Esercizio_1();
+        // Lezione_3_Esercizio_2();
+        Lezione_3_Esercizio_3();
+
     }
 
-    // Lezione 1
+    // Lezione 1 :
 
     public static void Lezione_1_Esercizio_1() {
         System.out.println("// Lezione 1 - Esercizio 1 :");
@@ -56,7 +69,7 @@ public class Main {
         System.out.println("\n");
     }
 
-    // Lezione 2
+    // Lezione 2 :
 
     public static void Lezione_2_Esercizio_1() {
         System.out.println("// Lezione 2 - Esercizio 1 :");
@@ -95,4 +108,22 @@ public class Main {
         System.out.println("\n");
     }
 
+    // Lezione 3 :
+
+    public static void Lezione_3_Esercizio_1() {
+        System.out.println("// Lezione 3 - Esercizio 1 :");
+        Lezione_3.Esercizio_1.RettangoloInAzione();
+        System.out.println("\n");
+    }
+
+    public static void Lezione_3_Esercizio_2() {
+        System.out.println("// Lezione 3 - Esercizio 2 :");
+        Lezione_3.Esercizio_2.controllaSim();
+        System.out.println("\n");
+    }
+
+    public static void Lezione_3_Esercizio_3() {
+        System.out.println("// Lezione 3 - Esercizio 3 :");
+        System.out.println("\n");
+    }
 }
