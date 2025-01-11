@@ -124,6 +124,7 @@ public class Main {
 
     public static void Lezione_3_Esercizio_3() {
         System.out.println("// Lezione 3 - Esercizio 3 :");
+        Lezione_3.Esercizio_3.Ecommerce();
         System.out.println("\n");
     }
 }

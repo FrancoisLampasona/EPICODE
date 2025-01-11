@@ -30,12 +30,10 @@ class Articolo {
 
     @Override
     public String toString() {
-        return "Articolo{" +
-                "codiceArticolo=" + codiceArticolo +
-                ", descrizioneArticolo='" + descrizioneArticolo + '\'' +
-                ", prezzoArticolo=" + prezzoArticolo +
-                ", numeroPezziDisponibili=" + numeroPezziDisponibili +
-                '}';
+        return "\n\ncodiceArticolo = " + codiceArticolo +
+                ", descrizioneArticolo = '" + descrizioneArticolo + '\'' +
+                ", prezzoArticolo = " + prezzoArticolo +
+                ", numeroPezziDisponibili = " + numeroPezziDisponibili;
     }
 }
 
@@ -57,13 +55,11 @@ class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "codiceCliente=" + codiceCliente +
-                ", nome='" + nome + '\'' +
-                ", cognome='" + cognome + '\'' +
-                ", email='" + email + '\'' +
-                ", dataIscrizione='" + dataIscrizione + '\'' +
-                '}';
+        return "\n\ncodiceCliente = " + codiceCliente +
+                ", nome = '" + nome + '\'' +
+                ", cognome = '" + cognome + '\'' +
+                ", email = '" + email + '\'' +
+                ", dataIscrizione = '" + dataIscrizione + '\n';
     }
 }
 
@@ -97,16 +93,15 @@ class Carrello {
                 articoli.append(articolo.toString()).append("\n");
             }
         }
-        return "Carrello{" +
-                "clienteAssociato=" + clienteAssociato +
-                ", listaArticoli=\n" + articoli +
-                ", costoTotale=" + costoTotale +
-                '}';
+        return "Carrello : \n\n" +
+                "clienteAssociato = " + clienteAssociato + "\n" +
+                "listaArticoli = " + articoli + '\n' +
+                "costoTotale = " + costoTotale;
     }
 }
 
 public class Esercizio_3 {
-    public static void main(String[] args) {
+    public static void Ecommerce() {
         // Crea un cliente
         Cliente cliente = new Cliente(1, "Mario", "Rossi", "mario.rossi@example.com", "2023-01-01");
 
