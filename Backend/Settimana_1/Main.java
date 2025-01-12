@@ -3,25 +3,28 @@ public class Main {
 
         // Esercizi Lezione 1 :
 
-        /*
-         * Lezione_1_Esercizio_1();
-         * Lezione_1_Esercizio_2();
-         * Lezione_1_Esercizio_3();
-         */
+        // Lezione_1_Esercizio_1();
+        // Lezione_1_Esercizio_2();
+        // Lezione_1_Esercizio_3();
 
         // Esercizi Lezione 2 :
 
-        /*
-         * Lezione_2_Esercizio_1();
-         * Lezione_2_Esercizio_2();
-         * Lezione_2_Esercizio_3();
-         * Lezione_2_Esercizio_4();
-         */
+        // Lezione_2_Esercizio_1();
+        // Lezione_2_Esercizio_2();
+        // Lezione_2_Esercizio_3();
+        // Lezione_2_Esercizio_4();
 
         // Esercizi Lezione 3 :
+
         // Lezione_3_Esercizio_1();
         // Lezione_3_Esercizio_2();
-        Lezione_3_Esercizio_3();
+        // Lezione_3_Esercizio_3();
+
+        // Esercizi Lezione 4 :
+
+        // Lezione_4_Esercizio_1();
+        // Lezione_4_Esercizio_2();
+        Lezione_4_Esercizio_3();
 
     }
 
@@ -127,4 +130,25 @@ public class Main {
         Lezione_3.Esercizio_3.Ecommerce();
         System.out.println("\n");
     }
+
+    // Lezione 4
+
+    public static void Lezione_4_Esercizio_1() {
+        System.out.println("// Lezione 4 - Esercizio 1 :");
+        Lezione_4.Esercizio_1.Ufficio();
+        System.out.println("\n");
+    }
+
+    public static void Lezione_4_Esercizio_2() {
+        System.out.println("// Lezione 4 - Esercizio 2 :");
+        Lezione_4.Esercizio_2.Ufficio_2();
+        System.out.println("\n");
+    }
+
+    public static void Lezione_4_Esercizio_3() {
+        System.out.println("// Lezione 4 - Esercizio 3 :");
+        Lezione_4.Esercizio_3.Ufficio_3();
+        System.out.println("\n");
+    }
+
 }
