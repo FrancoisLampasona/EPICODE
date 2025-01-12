@@ -24,7 +24,10 @@ public class Main {
 
         // Lezione_4_Esercizio_1();
         // Lezione_4_Esercizio_2();
-        Lezione_4_Esercizio_3();
+        // Lezione_4_Esercizio_3();
+
+        // Progetto Settimanale :
+
 
     }
 
@@ -149,6 +152,13 @@ public class Main {
         System.out.println("// Lezione 4 - Esercizio 3 :");
         Lezione_4.Esercizio_3.Ufficio_3();
         System.out.println("\n");
+    }
+
+
+    // Progetto Settimanale
+
+    public static void Progetto_Settimanale(){
+        
     }
 
 }
