@@ -30,7 +30,6 @@ public class RegistrazioneAudio extends ElementoMultimediale {
     }
 
     public void playNow() {
-        System.out.println("Riproduzione di '" + getTitolo() + "' per " + durata + " secondi...");
         gestoreAudio.playNowAudio(getTitolo(), durata, getVolume());
     }
 

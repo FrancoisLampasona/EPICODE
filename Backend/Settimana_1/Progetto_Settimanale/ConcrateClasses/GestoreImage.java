@@ -1,24 +1,24 @@
 package Progetto_Settimanale.ConcrateClasses;
 
-import Progetto_Settimanale.Interfaces.regolaLuminosità;
+import Progetto_Settimanale.Interfaces.regolaLuminosita;
 
-public class GestoreImage implements regolaLuminosità {
-    private int luminosità = 5;
-    private final int luminositàMax = 10;
-    private final int luminositàMin = 0;
+public class GestoreImage implements regolaLuminosita {
+    private int luminosita = 5;
+    private final int luminositaMax = 10;
+    private final int luminositaMin = 0;
 
-    public int getLuminosità() {
-        return luminosità;
+    public int getLuminosita() {
+        return luminosita;
     }
 
     @Override
-    public void alzaLuminosità(int lum) {
-        luminosità = alzaLuminositàDefault(lum, luminosità, luminositàMax);
+    public void alzaLuminosita(int lum) {
+        luminosita = alzaLuminositaDefault(lum, luminosita, luminositaMax);
     }
 
     @Override
-    public void abbassaLuminosità(int lum) {
-        luminosità = abbassaLuminositàDefault(lum, luminosità, luminositàMin);
+    public void abbassaLuminosita(int lum) {
+        luminosita = abbassaLuminositaDefault(lum, luminosita, luminositaMin);
     }
 
 }

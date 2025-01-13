@@ -3,7 +3,7 @@ package Progetto_Settimanale.Interfaces;
 public interface playAudio {
 
     default void playNowAudio(String titolo, int durata, int volume) {
-        System.out.println("Riproduzione di '" + titolo + "' in corso per " + durata + " secondi...");
+        System.out.println("\nRiproduzione di '" + titolo + "' in corso per " + durata + " secondi...");
         if (volume == 0) {
             System.out.println("Il volume è a 0: nessun suono udibile.");
         } else {

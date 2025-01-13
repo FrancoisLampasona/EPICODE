@@ -17,6 +17,10 @@ public class Video extends ElementoMultimediale {
         return durata;
     }
 
+    public int getLuminosita() {
+        return gestoreVideo.getLuminosita();
+    }
+
     public int getVolume() {
         return gestoreVideo.getVolume();
     }
@@ -29,23 +33,22 @@ public class Video extends ElementoMultimediale {
         gestoreVideo.abbassaVolume(vol);
     }
 
-    public void alzaLuminosità(int lum) {
-        gestoreVideo.alzaLuminosità(lum);
+    public void alzaLuminosita(int lum) {
+        gestoreVideo.alzaLuminosita(lum);
     }
 
-    public void abbassaLuminosità(int lum) {
-        gestoreVideo.abbassaLuminosità(lum);
+    public void abbassaLuminosita(int lum) {
+        gestoreVideo.abbassaLuminosita(lum);
     }
 
     public void playNow() {
-        System.out.println("Riproduzione di '" + getTitolo() + "' per " + durata + " secondi...");
-        gestoreVideo.playNowVideo(getTitolo(), durata, getVolume(), gestoreVideo.getLuminosità());
+        gestoreVideo.playNowVideo(getTitolo(), durata, getVolume(), gestoreVideo.getLuminosita());
     }
 
     @Override
     public String toString() {
         return "Video [Titolo = '" + getTitolo() + "', Durata = " + durata + " secondi, Volume = " + getVolume()
-                + ", Luminosità = " + gestoreVideo.getLuminosità() + "]";
+                + ", Luminosita = " + gestoreVideo.getLuminosita() + "]";
     }
 
 }

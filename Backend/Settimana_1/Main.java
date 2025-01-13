@@ -1,3 +1,10 @@
+import java.util.Scanner;
+
+import Progetto_Settimanale.AbstractClasses.ElementoMultimediale;
+import Progetto_Settimanale.ConcrateClasses.Immagine;
+import Progetto_Settimanale.ConcrateClasses.RegistrazioneAudio;
+import Progetto_Settimanale.ConcrateClasses.Video;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -28,6 +35,7 @@ public class Main {
 
         // Progetto Settimanale :
 
+        Progetto_Settimanale();
 
     }
 
@@ -154,11 +162,209 @@ public class Main {
         System.out.println("\n");
     }
 
-
     // Progetto Settimanale
 
-    public static void Progetto_Settimanale(){
-        
-    }
+    public static void Progetto_Settimanale() {
 
+        Scanner scanner = new Scanner(System.in);
+
+        ElementoMultimediale[] player = new ElementoMultimediale[5];
+
+        System.out.println("Inserisci 5 Elementi Mulimediali a tua scelta !\n");
+
+        String input;
+
+        // Switch Case - Inserisci i dati con Input (metodo lento, solo per proggetto)
+        /*
+         * int indice = 0;
+         * 
+         * while (indice < player.length) {
+         * 
+         * System.out.println("\n1 = Registrazione Audio");
+         * System.out.println("2 = Video");
+         * System.out.println("3 = Immagine\n");
+         * System.out.print("Cosa vuoi inserire nel Lettore Multimediale : ");
+         * 
+         * input = scanner.nextLine();
+         * 
+         * String title;
+         * int durata;
+         * 
+         * switch (input) {
+         * case "3":
+         * System.out.print("\nImmagine !\nTitolo immagine: ");
+         * title = scanner.nextLine();
+         * player[indice] = new Immagine(title);
+         * break;
+         * case "1":
+         * System.out.print("\nRegistrazione Audio !\nTitolo Audio : ");
+         * title = scanner.nextLine();
+         * System.out.print("Durata della registrazione audio : ");
+         * durata = scanner.nextInt();
+         * scanner.nextLine();
+         * player[indice] = new RegistrazioneAudio(title, durata);
+         * break;
+         * case "2":
+         * System.out.print("\nVideo !\nTitolo Video: ");
+         * title = scanner.nextLine();
+         * System.out.print("Durata del video : ");
+         * durata = scanner.nextInt();
+         * scanner.nextLine();
+         * player[indice] = new Video(title, durata);
+         * break;
+         * default:
+         * System.out.println("\n\nNumero non valido, prova ad inserire 1 o 2 o 3\n");
+         * continue;
+         * }
+         * 
+         * System.out.println("\nHai inserito : ");
+         * System.out.println(player[indice].toString());
+         * indice++;
+         * }
+         */
+
+        // Senza SwitchCase oggetti creati a mano (metodo veloce, per fare prove)
+
+        player[0] = new RegistrazioneAudio("PokerFace", 21);
+        player[1] = new RegistrazioneAudio("Happier", 12);
+        player[2] = new Video("IlSignoreDegliAnelli", 10);
+        player[3] = new Video("HarryPotter", 5);
+        player[4] = new Immagine("VacanzeInAmerica");
+
+        System.out.println("\nMedia inseriti correttamente ! \n");
+        input = "";
+
+        while (!input.equals("0")) {
+            System.out.println("\nMenu' :");
+            System.out.println("1) Vedi tutti i Media");
+            System.out.println("2) Riproduci un Elemento Media");
+            System.out.println("3) Modifica un Elemento Media");
+            System.out.println("4) Esci dal programma");
+            System.out.print("\nInserisci scelta (0 per uscire): ");
+
+            input = scanner.nextLine();
+
+            switch (input) {
+                case "1":
+                    if (player == null || player.length == 0) {
+                        System.out.println("Nessun media disponibile.");
+                    } else {
+                        System.out.println("\nLista dei Media:");
+                        for (int i = 0; i < player.length; i++) {
+                            System.out.println(i + ") " + player[i].toString());
+                        }
+                    }
+                    break;
+
+                case "2":
+                    if (player == null || player.length == 0) {
+                        System.out.println("Nessun media disponibile.");
+                        break;
+                    }
+
+                    System.out.println("\nQuale di questi elementi vuoi riprodurre?\n");
+                    for (int i = 0; i < player.length; i++) {
+                        System.out.println(i + ") " + player[i].toString());
+                    }
+
+                    System.out.print("\nInserisci il numero dell'elemento: ");
+                    try {
+                        int indexToPlay = Integer.parseInt(scanner.nextLine());
+
+                        if (indexToPlay >= 0 && indexToPlay < player.length) {
+                            ElementoMultimediale elemento = player[indexToPlay];
+
+                            if (elemento instanceof Video) {
+                                Video video = (Video) elemento;
+                                System.out.println("\nTitolo: " + video.getTitolo());
+                                System.out.println("Il volume del video e': " + video.getVolume()
+                                        + "\nLa luminosita del video e': " + video.getLuminosita());
+
+                                video.playNow();
+
+                            } else if (elemento instanceof RegistrazioneAudio) {
+                                RegistrazioneAudio audio = (RegistrazioneAudio) elemento;
+                                System.out.println("Il volume della registrazione audio e': " + audio.getVolume());
+                                audio.playNow();
+
+                            } else if (elemento instanceof Immagine) {
+                                Immagine immagine = (Immagine) elemento;
+                                System.out.println("La luminosita dell'immagine e': " + immagine.getLuminosita());
+                                immagine.show();
+                            } else {
+                                System.out.println("Tipo di elemento non riconosciuto.");
+                            }
+                        } else {
+                            System.out.println("Indice non valido. Riprova.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Errore: inserisci un numero valido.");
+                    }
+                    break;
+
+                case "3":
+                    if (player == null || player.length == 0) {
+                        System.out.println("Nessun media disponibile.");
+                        break;
+                    }
+
+                    System.out.println("\nQuale di questi elementi vuoi modificare?\n");
+                    for (int i = 0; i < player.length; i++) {
+                        System.out.println(i + ") " + player[i].toString());
+                    }
+
+                    System.out.print("\nInserisci il numero dell'elemento: ");
+                    try {
+                        int indexToModify = Integer.parseInt(scanner.nextLine());
+
+                        if (indexToModify >= 0 && indexToModify < player.length) {
+                            ElementoMultimediale elemento = player[indexToModify];
+
+                            if (elemento instanceof Video) {
+                                Video video = (Video) elemento;
+                                System.out.println("\nTitolo: " + video.getTitolo());
+                                System.out.print("\nInserisci di quanto vuoi aumentare il volume (0-10): ");
+                                int volume = Integer.parseInt(scanner.nextLine());
+                                System.out.print("Inserisci la luminosita per il video (0-10): ");
+                                int luminosita = Integer.parseInt(scanner.nextLine());
+
+                                video.alzaVolume(volume);
+                                video.alzaLuminosita(luminosita);
+
+                            } else if (elemento instanceof RegistrazioneAudio) {
+                                RegistrazioneAudio audio = (RegistrazioneAudio) elemento;
+                                System.out.print("Inserisci il volume per l'audio (0-10): ");
+                                int volume = Integer.parseInt(scanner.nextLine());
+                                audio.alzaVolume(volume);
+
+                            } else if (elemento instanceof Immagine) {
+                                Immagine immagine = (Immagine) elemento;
+                                System.out.print("Inserisci la luminosita per l'immagine (0-10): ");
+                                int luminosita = Integer.parseInt(scanner.nextLine());
+                                immagine.alzaLuminosita(luminosita);
+
+                            } else {
+                                System.out.println("Tipo di elemento non riconosciuto.");
+                            }
+                        } else {
+                            System.out.println("Indice non valido. Riprova.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Errore: inserisci un numero valido.");
+                    }
+                    break;
+
+                case "4":
+                    System.out.println("\nUscita dal programma. Arrivederci!");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Opzione non valida. Inserisci 1, 2, 3 o 4.");
+                    break;
+            }
+        }
+
+        scanner.close();
+    }
 }
