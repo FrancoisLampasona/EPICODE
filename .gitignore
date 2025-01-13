@@ -1,3 +1,5 @@
 # Ignora la cartella di output
 **/out/
 
+# Ingnora gitIgnore
+.gitignore
