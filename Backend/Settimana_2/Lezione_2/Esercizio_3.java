@@ -21,11 +21,13 @@ public class Esercizio_3 {
     public static void main(String[] args) {
 
         HashMap<String, String> persone = new HashMap<String, String>();
+
         aggiungi_elemento("Francois", "12345", persone);
         aggiungi_elemento("Niccolò", "6789", persone);
         aggiungi_elemento("MartinoSempreBello", "2345", persone);
         aggiungi_elemento("Tommaso", "56785", persone);
 
+        System.out.println("Eliminato l'elemento tramite nome : 'Francois'");
         elimina_tramite_nome("Francois", persone);
 
         System.out.println("Ricerca tramite il numero '6789' : ");
@@ -59,13 +61,13 @@ public class Esercizio_3 {
     }
 
     public static void ricerca_persona_tramite_nome(String nome, HashMap<String, String> persone) {
-        System.out.println("Il numero di telefono di " + nome + "e' = " + persone.get(nome) + '\n');
+        System.out.println("Il numero di telefono di " + nome + " e' = " + persone.get(nome) + '\n');
     }
 
     public static void stampa_tutti_i_contatti(HashMap<String, String> persone) {
 
-        for (String i : persone.keySet()) {
-            System.out.println("key: " + i + " value: " + persone.get(i));
+        for (String nome : persone.keySet()) {
+            System.out.println("Nome: " + "'" + nome + "'" + " \nNumero di telefono: " + persone.get(nome) + "\n");
         }
 
     }
