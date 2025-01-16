@@ -31,7 +31,7 @@ public class Main {
         products.add(new Product(10, "Borraccia Termica", "Boys", 20.00));
         products.add(new Product(11, "Passegino", "Baby", 20.00));
         products.add(new Product(12, "Baby Monitor", "Baby", 20.00));
-        products.add(new Product(13, "Bavaglio", "Baby", 20.00));
+        products.add(new Product(13, "Bavaglio", "Bby", 20.00));
 
         Order order = new Order(1, "Completed", LocalDate.now(), LocalDate.now().plusDays(5), products, customer);
 
