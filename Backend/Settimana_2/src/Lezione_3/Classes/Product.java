@@ -1,4 +1,6 @@
-package Backend.Settimana_2.Lezione_3.Classes;
+package Lezione_3.Classes;
+
+
 
 public class Product {
     private long id;

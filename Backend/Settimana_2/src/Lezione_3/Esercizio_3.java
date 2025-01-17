@@ -1,10 +1,12 @@
-package Backend.Settimana_2.Lezione_3;
+package Lezione_3;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import Backend.Settimana_2.Lezione_3.Classes.Order;
-import Backend.Settimana_2.Lezione_3.Classes.Product;
+import Lezione_3.Classes.Order;
+import Lezione_3.Classes.Product;
+
+
 
 public class Esercizio_3 {
     public static void trovaBoysFaiSconto(Order order) {

@@ -1,3 +1,5 @@
+package Lezione_2;
+
 /*
  * #Esercizio #2
  * Scrivere una funzione che accetti un intero N e restituisca una lista ordinata di N ineteri casuali da 0 a 100.
@@ -7,7 +9,7 @@
  * altrimenti stampa i valori in posizioni dispari.
  */
 
-package Backend.Settimana_2.Lezione_2;
+
 
 import java.util.ArrayList;
 import java.util.Collections;

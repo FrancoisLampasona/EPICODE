@@ -1,3 +1,5 @@
+package Lezione_2;
+
 /*
  * Esercizio #1
  * Scrivere un programma che chieda all'utente di inserire un intero N che rappresenti il numero di elementi
@@ -8,7 +10,7 @@
  * Utilizza l'interfaccia Set e l'implementazione HashSet
  */
 
-package Backend.Settimana_2.Lezione_2;
+
 
 import java.util.HashSet;
 import java.util.Scanner;
