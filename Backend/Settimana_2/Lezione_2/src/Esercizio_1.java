@@ -1,4 +1,4 @@
-package Lezione_2;
+
 
 /*
  * Esercizio #1

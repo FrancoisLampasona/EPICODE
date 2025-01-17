@@ -1,10 +1,9 @@
-package Lezione_3;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
-import Lezione_3.Classes.Order;
-import Lezione_3.Classes.Product;
+import Classes.Order;
+import Classes.Product;
+
 
 
 

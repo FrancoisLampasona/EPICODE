@@ -1,5 +1,4 @@
-package Lezione_3.Classes;
-
+package Classes;
 
 
 public class Customer {

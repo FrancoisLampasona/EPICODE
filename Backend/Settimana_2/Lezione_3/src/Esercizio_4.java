@@ -1,15 +1,17 @@
-package Lezione_3;
+
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import Lezione_3.Classes.Order;
-import Lezione_3.Classes.Product;
+import Classes.Order;
+import Classes.Product;
 
 
 
-public class Esercizio_1 {
-    public static void trovaBook(Order order) {
+
+
+public class Esercizio_4 {
+    public static void trovaListaClientiTia(Order order) {
 
         List<Product> books = order.getProducts().stream()
                 .filter(product -> "Book".equals(product.getCategory()) && product.getPrice() > 100)

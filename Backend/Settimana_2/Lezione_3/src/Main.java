@@ -1,11 +1,10 @@
-package Lezione_3;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import Lezione_3.Classes.Customer;
-import Lezione_3.Classes.Order;
-import Lezione_3.Classes.Product;
+import Classes.Customer;
+import Classes.Order;
+import Classes.Product;
 
 
 
