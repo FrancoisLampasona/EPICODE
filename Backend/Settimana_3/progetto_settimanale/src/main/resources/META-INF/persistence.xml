@@ -1,0 +1,28 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.1">
+    <persistence-unit name="gestioneBiblioteca">
+        <!--classi
+        che saranno soggette a persistenza -->
+        <class>org.example.Entities.Autore</class>
+        <class>org.example.Entities.Genere</class>
+        <class>org.example.Entities.Libro</class>
+        <class>org.example.Entities.Prestito</class>
+        <class>org.example.Entities.Pubblicazioni</class>
+        <class>org.example.Entities.Rivista</class>
+        <class>org.example.Entities.Utente</class>
+        <!--configurazione
+        della connessione al db-->
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="jakarta.persistence.jdbc.url"
+                value="jdbc:postgresql://dpg-cubklf9opnds73ek432g-a.frankfurt-postgres.render.com:5432/java_db_epicode" />
+            <property name="jakarta.persistence.jdbc.user" value="java_db_epicode_user" />
+            <property name="jakarta.persistence.jdbc.password"
+                value="NNv7hjI9ffnccoAPckKAUYzMC5HiOWYZ" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.format_sql" value="true" />
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
