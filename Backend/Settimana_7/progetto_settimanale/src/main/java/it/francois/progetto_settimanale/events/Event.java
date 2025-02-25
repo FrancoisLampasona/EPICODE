@@ -13,6 +13,11 @@ import it.francois.progetto_settimanale.auth.AppUser;
 @Data
 @NoArgsConstructor
 public class Event {
+    public Event(String title2, String description2, LocalDateTime date2, String location2, AppUser orElseThrow,
+            Integer maxGuests2) {
+        //TODO Auto-generated constructor stub
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
