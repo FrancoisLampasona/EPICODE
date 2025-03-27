@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+
+
+/* src/index.css */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/fonts/HemgjoardFont.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
